@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" class="font-sans">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./public/css/styles.css">
+</head>
+<body class="bg-background">
+    <section class="navigation-01 py-6 bg-white">
+        <header class="container px-20 grid grid-cols-5">
+            <div class="flex justify-start items-center">
+                <a href="#" class="text-2xl font-bold text-dark-violet">Startup 3</a>
+            </div>
+            <nav class="col-span-3">
+                <ul class="h-full flex justify-center items-center gap-10 text-dark-violet">
+                    <li><a class="hover-light-nav-item" href="#">Home</a></li>
+                    <li><a class="hover-light-nav-item" href="#">Features</a></li>
+                    <li><a class="hover-light-nav-item" href="#">Blog</a></li>
+                    <li><a class="hover-light-nav-item" href="#">Shop</a></li>
+                    <li><a class="hover-light-nav-item" href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                </ul>
+            </nav>
+            <div class="flex justify-end gap-7">
+                <button class="light-white-button hover-light-white-button">Sign In</button>
+                <button class="px-5 py-2 font-medium text-white bg-light-violet border-2 border-light-violet rounded-full hover:text-light-violet hover:bg-white">Sign Up</button>
+            </div>
+        </header>
+    </section>
+    <div class="divider"></div>
+    <section class="navigation-02 py-6 bg-white">
+        <header class="container px-20 grid grid-cols-6">
+            <div class="flex justify-start items-center">
+                <a href="#" class="text-2xl font-bold text-dark-violet">Startup 3</a>
+            </div>
+            <nav class="col-span-2">
+                <ul class="h-full flex justify-center items-center gap-10 text-dark-violet">
+                    <li class="relative">
+                        <a class="flex items-center border-b-2 border-transparent hover-light-nav-item peer" href="#">Products
+                            <i class="fa-solid fa-angle-down pl-2"></i>
+                        </a>
+                        <ul class="absolute hidden w-24 py-2 bg-white rounded-lg shadow-lg peer-focus:block">
+                            <li><a class="dropdown-item" href="#">Option 1</a></li>
+                            <li><a class="dropdown-item" href="#">Option 2</a></li>
+                            <li><a class="dropdown-item" href="#">Option 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="hover-light-nav-item" href="#">Pricing</a></li>
+                    <li><a class="hover-light-nav-item" href="#">Community</a></li>
+                </ul>
+            </nav>
+            <div class="col-span-2 col-start-5 flex justify-end items-center gap-3">
+                <button class="light-white-button hover-light-white-button">API</button>
+                <button class="light-white-button hover-light-white-button">Help</button>
+                <button class="light-white-button hover-light-white-button">Login</button>
+                <button class="px-5 py-2 text-dark-violet font-medium border-2 rounded-full hover:text-white hover:bg-light-violet hover:border-light-violet">Sign Up</button>
+            </div>
+        </header>
+    </section>
+    <div class="divider"></div>
+</body>
+</html>
