@@ -12,10 +12,6 @@
     box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
 }
 
-.hover-light-nav-item {
-    @apply hover:border-b-2 hover:border-light-violet hover:border-opacity-60
-}
-
 .light-white-button {
     @apply px-5 py-2 text-dark-violet border-2 border-transparent rounded-full
 }

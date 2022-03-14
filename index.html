@@ -6,24 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navigation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.3.4/dist/flowbite.min.css"/>
     <link rel="stylesheet" href="./public/css/styles.css">
 </head>
 <body class="bg-background">
     <section class="navigation-01 py-6 bg-white">
-        <header class="container px-20 grid grid-cols-5">
-            <div class="flex justify-start items-center">
+        <header class="container px-5 grid grid-cols-5 gap-y-3 sm:px-10">
+            <div class="col-span-4 flex items-center md:col-span-1">
                 <a href="#" class="text-2xl font-bold text-dark-violet">Startup 3</a>
             </div>
-            <nav class="col-span-3">
-                <ul class="h-full flex justify-center items-center gap-10 text-dark-violet">
-                    <li><a class="hover-light-nav-item" href="#">Home</a></li>
-                    <li><a class="hover-light-nav-item" href="#">Features</a></li>
-                    <li><a class="hover-light-nav-item" href="#">Blog</a></li>
-                    <li><a class="hover-light-nav-item" href="#">Shop</a></li>
-                    <li><a class="hover-light-nav-item" href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <button class="w-fit p-3 flex justify-self-end text-xl text-dark-violet rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden" data-collapse-toggle="mobile-menu-01" type="button" aria-controls="mobile-menu-2" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="hidden col-span-5 md:block md:col-span-4 xl:col-span-3" id="mobile-menu-01">
+                <ul class="h-full flex flex-col md:flex-row md:justify-end md:items-center md:gap-5 text-dark-violet xl:justify-center xl:gap-10">
+                    <li><a class="py-2 pl-3 block border-b border-gray-100 hover:bg-gray-100 md:p-0 md:border-0 md:hover:border-b md:hover:border-gray-400 md:hover:bg-transparent" href="#">Home</a></li>
+                    <li><a class="py-2 pl-3 block border-b border-gray-100 hover:bg-gray-100 md:p-0 md:border-0 md:hover:border-b md:hover:border-gray-400 md:hover:bg-transparent" href="#">Features</a></li>
+                    <li><a class="py-2 pl-3 block border-b border-gray-100 hover:bg-gray-100 md:p-0 md:border-0 md:hover:border-b md:hover:border-gray-400 md:hover:bg-transparent" href="#">Blog</a></li>
+                    <li><a class="py-2 pl-3 block border-b border-gray-100 hover:bg-gray-100 md:p-0 md:border-0 md:hover:border-b md:hover:border-gray-400 md:hover:bg-transparent" href="#">Shop</a></li>
+                    <li><a class="py-2 pl-3 block border-b border-gray-100 hover:bg-gray-100 md:p-0 md:border-0 md:hover:border-b md:hover:border-gray-400 md:hover:bg-transparent" href="#">Search</a></li>
                 </ul>
             </nav>
-            <div class="flex justify-end gap-7">
+            <div class="col-span-5 flex justify-end gap-2 xl:col-span-1 xl:justify-end">
                 <button class="light-white-button hover-light-white-button">Sign In</button>
                 <button class="px-5 py-2 font-medium text-white bg-light-violet border-2 border-light-violet rounded-full hover:text-light-violet hover:bg-white">Sign Up</button>
             </div>
@@ -31,34 +35,134 @@
     </section>
     <div class="divider"></div>
     <section class="navigation-02 py-6 bg-white">
-        <header class="container px-20 grid grid-cols-6">
-            <div class="flex justify-start items-center">
+        <header class="container px-5 grid grid-cols-6 gap-y-3 sm:px-10">
+            <div class="col-span-5 flex justify-start items-center md:col-span-1">
                 <a href="#" class="text-2xl font-bold text-dark-violet">Startup 3</a>
             </div>
-            <nav class="col-span-2">
-                <ul class="h-full flex justify-center items-center gap-10 text-dark-violet">
-                    <li class="relative">
-                        <a class="flex items-center border-b-2 border-transparent hover-light-nav-item peer" href="#">Products
+            <button class="w-fit p-3 flex justify-self-end text-xl text-dark-violet rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden" data-collapse-toggle="mobile-menu-02" type="button" aria-controls="mobile-menu-02" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="hidden col-span-6 md:block md:col-span-5 xl:col-span-2" id="mobile-menu-02">
+                <ul class="h-full flex flex-col text-dark-violet md:flex-row md:justify-end md:items-center md:gap-10 xl:justify-start">
+                    <li><a class="py-2 pl-3 block border-b border-gray-100 hover:bg-gray-100 md:p-0 md:border-transparent md:hover:border-gray-400 md:hover:bg-transparent md:hidden" href="#">API</a></li>
+                    <li><a class="py-2 pl-3 block border-b border-gray-100 hover:bg-gray-100 md:p-0 md:border-transparent md:hover:border-gray-400 md:hover:bg-transparent md:hidden" href="#">Help</a></li>
+                    <li>
+                        <button type="button" class="py-2 pl-3 w-full flex items-center text-left border-b border-gray-100 hover:bg-gray-100 md:p-0 md:border-transparent md:hover:border-gray-400 md:hover:bg-transparent" aria-expanded="false" data-dropdown-toggle="dropdown">Products
                             <i class="fa-solid fa-angle-down pl-2"></i>
-                        </a>
-                        <ul class="absolute hidden w-24 py-2 bg-white rounded-lg shadow-lg peer-focus:block">
-                            <li><a class="dropdown-item" href="#">Option 1</a></li>
-                            <li><a class="dropdown-item" href="#">Option 2</a></li>
-                            <li><a class="dropdown-item" href="#">Option 3</a></li>
-                        </ul>
+                            <ul class="hidden bg-white rounded-md shadow-md" id="dropdown">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option 1</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Option 2</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Option 3</a>
+                                </li>
+                            </ul>
+                        </button>
                     </li>
-                    <li><a class="hover-light-nav-item" href="#">Pricing</a></li>
-                    <li><a class="hover-light-nav-item" href="#">Community</a></li>
+                    <li><a class="py-2 pl-3 block border-b border-gray-100 hover:bg-gray-100 md:p-0 md:border-transparent md:hover:border-gray-400 md:hover:bg-transparent" href="#">Pricing</a></li>
+                    <li><a class="py-2 pl-3 block border-b border-gray-100 hover:bg-gray-100 md:p-0 md:border-transparent md:hover:border-gray-400 md:hover:bg-transparent" href="#">Community</a></li>
                 </ul>
             </nav>
-            <div class="col-span-2 col-start-5 flex justify-end items-center gap-3">
-                <button class="light-white-button hover-light-white-button">API</button>
-                <button class="light-white-button hover-light-white-button">Help</button>
+            <div class="col-span-6 flex justify-end items-center gap-2 xl:col-span-2 xl:col-start-5">
+                <button class="hidden light-white-button hover-light-white-button md:block">API</button>
+                <button class="hidden light-white-button hover-light-white-button md:block">Help</button>
                 <button class="light-white-button hover-light-white-button">Login</button>
                 <button class="px-5 py-2 text-dark-violet font-medium border-2 rounded-full hover:text-white hover:bg-light-violet hover:border-light-violet">Sign Up</button>
             </div>
         </header>
     </section>
     <div class="divider"></div>
+    <section class="navigation-03 py-6 bg-white">
+        <header class="container px-5 grid grid-cols-6 gap-y-3 sm:px-10">
+            <div class="col-span-5 flex justify-start items-center md:col-span-1">
+                <a href="#" class="text-2xl font-bold text-dark-violet">Startup 3</a>
+            </div>
+            <button class="w-fit p-3 flex justify-self-end text-xl text-dark-violet rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden" data-collapse-toggle="mobile-menu-03" type="button" aria-controls="mobile-menu-03" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="hidden col-span-6 md:block md:col-span-5 xl:col-span-3" id="mobile-menu-03">
+                <ul class="h-full flex flex-col text-dark-violet md:flex-row md:justify-end md:items-center md:gap-8 xl:justify-start">
+                    <li><a class="py-2 pl-3 block border-b border-gray-100 hover:bg-gray-100 md:p-0 md:border-transparent md:hover:border-gray-400 md:hover:bg-transparent" href="#">Features</a></li>
+                    <li><a class="py-2 pl-3 block border-b border-gray-100 hover:bg-gray-100 md:p-0 md:border-transparent md:hover:border-gray-400 md:hover:bg-transparent" href="#">Downloads</a></li>
+                    <li><a class="py-2 pl-3 block border-b border-gray-100 hover:bg-gray-100 md:p-0 md:border-transparent md:hover:border-gray-400 md:hover:bg-transparent" href="#">Docs</a></li>
+                    <li><a class="py-2 pl-3 block border-b border-gray-100 hover:bg-gray-100 md:p-0 md:border-transparent md:hover:border-gray-400 md:hover:bg-transparent" href="#">Support</a></li>
+                    <li><a class="py-2 pl-3 block border-b border-gray-100 hover:bg-gray-100 md:p-0 md:border-transparent md:hover:border-gray-400 md:hover:bg-transparent" href="#">Blog</a></li>
+                    <li><a class="py-2 pl-3 block border-b border-gray-100 hover:bg-gray-100 md:p-0 md:border-transparent md:hover:border-gray-400 md:hover:bg-transparent" href="#">
+                        <i class="fa-solid fa-magnifying-glass hidden pr-2"></i>Search</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="col-span-6 flex justify-end items-center gap-9 text-lg text-gray-400 xl:col-span-2 xl:col-start-5">
+                <a href="#"><i class="fa-brands fa-twitter hover:text-dark-violet"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-square hover:text-dark-violet"></i></a>
+                <a href="#"><i class="fa-brands fa-google-plus-g hover:text-dark-violet"></i></a>
+            </div>
+        </header>
+    </section>
+    <div class="divider"></div>
+    <section class="navigation-04 py-6 bg-white">
+        <header class="container px-5 grid grid-cols-5 gap-y-3 sm:px-10">
+            <div class="col-span-4 flex items-center md:col-span-1">
+                <a href="#" class="text-2xl font-bold text-dark-violet">Startup 3</a>
+            </div>
+            <button class="w-fit p-3 flex justify-self-end text-xl text-dark-violet rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden" data-collapse-toggle="mobile-menu-04" type="button" aria-controls="mobile-menu-04" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="hidden col-span-5 md:block md:col-span-4 xl:col-span-3" id="mobile-menu-04">
+                <ul class="h-full flex flex-col md:flex-row md:justify-end md:items-center md:gap-5 text-dark-violet xl:justify-center xl:gap-10">
+                    <li><a class="py-2 pl-3 block border-b border-gray-100 hover:bg-gray-100 md:p-0 md:border-0 md:hover:border-b md:hover:border-gray-400 md:hover:bg-transparent" href="#">Portfolio</a></li>
+                    <li><a class="py-2 pl-3 block border-b border-gray-100 hover:bg-gray-100 md:p-0 md:border-0 md:hover:border-b md:hover:border-gray-400 md:hover:bg-transparent" href="#">How it Works</a></li>
+                    <li><a class="py-2 pl-3 block border-b border-gray-100 hover:bg-gray-100 md:p-0 md:border-0 md:hover:border-b md:hover:border-gray-400 md:hover:bg-transparent" href="#">Pricing</a></li>
+                    <li><a class="py-2 pl-3 block border-b border-gray-100 hover:bg-gray-100 md:p-0 md:border-0 md:hover:border-b md:hover:border-gray-400 md:hover:bg-transparent" href="#">About</a></li>
+                </ul>
+            </nav>
+            <div class="col-span-5 flex justify-end gap-2 xl:col-span-1 xl:justify-end">
+                <button class="light-white-button hover-light-white-button">Login</button>
+                <button class="px-5 py-2 text-dark-violet font-medium border-2 rounded-full hover:text-white hover:bg-light-violet hover:border-light-violet">Sign Up</button>
+            </div>
+        </header>
+    </section>
+    <div class="divider"></div>
+    <section class="navigation-05 py-6 bg-white">
+        <header class="container px-5 grid grid-cols-2 gap-y-3 sm:px-10">
+            <div class="col-span-1 flex items-center md:col-span-1">
+                <a href="#" class="text-2xl font-bold text-dark-violet">Startup 3</a>
+            </div>
+            <button class="w-fit p-3 flex justify-self-end text-xl text-dark-violet rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden" data-collapse-toggle="mobile-menu-05" type="button" aria-controls="mobile-menu-05" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="hidden col-span-2 md:block md:col-span-1" id="mobile-menu-05">
+                <ul class="h-full flex flex-col md:flex-row md:justify-end md:items-center md:gap-5 text-dark-violet xl:gap-10">
+                    <li><a class="py-2 pl-3 block border-b border-gray-100 hover:bg-gray-100 md:p-0 md:border-0 md:hover:border-b md:hover:border-gray-400 md:hover:bg-transparent" href="#">Features</a></li>
+                    <li><a class="py-2 pl-3 block border-b border-gray-100 hover:bg-gray-100 md:p-0 md:border-0 md:hover:border-b md:hover:border-gray-400 md:hover:bg-transparent" href="#">Pricing</a></li>
+                    <li><a class="py-2 pl-3 block border-b border-gray-100 hover:bg-gray-100 md:p-0 md:border-0 md:hover:border-b md:hover:border-gray-400 md:hover:bg-transparent" href="#">About</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+    <div class="divider"></div>
+    <section class="navigation-06 py-6 bg-white">
+        <header class="container px-5 grid grid-cols-1 gap-y-3 sm:px-10 sm:grid-cols-2">
+            <div class="flex justify-center items-center sm:justify-start">
+                <a href="#" class="text-2xl font-bold text-dark-violet">Startup 3</a>
+            </div>
+            <nav>
+                <ul class="flex justify-center items-center gap-8 sm:justify-end">
+                    <li><a class="py-2 border-gray-100 hover:border-b hover:border-gray-400" href="#">Features</a></li>
+                    <li><a class="py-2 border-gray-100 hover:border-b hover:border-gray-400" href="#">Pricing</a></li>
+                    <li><button class="px-5 py-2 text-white font-medium bg-pink border-2 border-pink rounded-full hover:text-pink hover:bg-white hover:border-pink">Sign Up</button></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+    <div class="divider"></div>
+    <section>
+
+    </section>
+
+    <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
 </body>
 </html>
