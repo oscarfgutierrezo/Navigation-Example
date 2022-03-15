@@ -15,7 +15,10 @@ module.exports = {
       },
       fontFamily: {
         "sans": "DM Sans"
-      }
+      },
+      backgroundImage: {
+        nav22: 'url("../img/navigation-22.png")',
+    },
     },
   },
   plugins: [],
