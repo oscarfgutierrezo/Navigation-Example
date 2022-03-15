@@ -506,6 +506,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.order-2{
+  order: 2;
+}
+
+.order-3{
+  order: 3;
+}
+
 .col-span-4{
   grid-column: span 4 / span 4;
 }
@@ -572,8 +580,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-4{
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .flex-col{
   flex-direction: column;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.content-center{
+  align-content: center;
 }
 
 .items-center{
@@ -616,8 +640,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 2rem;
 }
 
+.gap-7{
+  gap: 1.75rem;
+}
+
+.gap-10{
+  gap: 2.5rem;
+}
+
 .gap-y-3{
   row-gap: 0.75rem;
+}
+
+.gap-x-5{
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+
+.gap-x-10{
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+}
+
+.gap-y-5{
+  row-gap: 1.25rem;
 }
 
 .justify-self-end{
@@ -634,6 +680,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .rounded-md{
   border-radius: 0.375rem;
+}
+
+.rounded{
+  border-radius: 0.25rem;
 }
 
 .border-2{
@@ -669,6 +719,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-pink{
   --tw-border-opacity: 1;
   border-color: rgb(233 58 125 / var(--tw-border-opacity));
+}
+
+.border-gray-300{
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
+.border-gray-200{
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
 .bg-background{
@@ -925,8 +985,40 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 640px){
+  .sm\:-order-1{
+    order: -1;
+  }
+
+  .sm\:order-2{
+    order: 2;
+  }
+
+  .sm\:col-span-1{
+    grid-column: span 1 / span 1;
+  }
+
+  .sm\:block{
+    display: block;
+  }
+
+  .sm\:flex{
+    display: flex;
+  }
+
+  .sm\:grid{
+    display: grid;
+  }
+
   .sm\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .sm\:flex-row{
+    flex-direction: row;
   }
 
   .sm\:justify-start{
