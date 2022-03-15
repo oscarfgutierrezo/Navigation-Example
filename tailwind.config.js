@@ -10,7 +10,8 @@ module.exports = {
         "primary": "#2F1893",
         "dark-violet": "#1E0E62",
         "light-violet": "#482BE7",
-        "pink": "#E93A7D"
+        "pink": "#E93A7D",
+        "green": "#25DAC5"
       },
       fontFamily: {
         "sans": "DM Sans"
