@@ -636,6 +636,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 1.25rem;
 }
 
+.gap-3{
+  gap: 0.75rem;
+}
+
 .gap-y-3{
   row-gap: 0.75rem;
 }
@@ -781,6 +785,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 0.5rem;
 }
 
+.pr-3{
+  padding-right: 0.75rem;
+}
+
 .text-left{
   text-align: left;
 }
@@ -914,6 +922,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
+.hover\:border:hover{
+  border-width: 1px;
+}
+
 .hover\:border-b:hover{
   border-bottom-width: 1px;
 }
@@ -956,6 +968,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:bg-primary:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(47 24 147 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-transparent:hover{
+  background-color: transparent;
 }
 
 .hover\:text-light-violet:hover{
