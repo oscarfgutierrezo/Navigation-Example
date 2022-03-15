@@ -674,6 +674,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   row-gap: 1.25rem;
 }
 
+.gap-y-2{
+  row-gap: 0.5rem;
+}
+
+.self-end{
+  align-self: flex-end;
+}
+
+.justify-self-start{
+  justify-self: start;
+}
+
 .justify-self-end{
   justify-self: end;
 }
@@ -872,6 +884,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-400{
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.text-pink{
+  --tw-text-opacity: 1;
+  color: rgb(233 58 125 / var(--tw-text-opacity));
 }
 
 .placeholder-white::-moz-placeholder{
@@ -1239,6 +1256,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     gap: 2rem;
   }
 
+  .md\:gap-7{
+    gap: 1.75rem;
+  }
+
   .md\:border-0{
     border-width: 0px;
   }
@@ -1263,6 +1284,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:hover\:border-white:hover{
     --tw-border-opacity: 1;
     border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  }
+
+  .md\:hover\:border-pink:hover{
+    --tw-border-opacity: 1;
+    border-color: rgb(233 58 125 / var(--tw-border-opacity));
   }
 
   .md\:hover\:bg-transparent:hover{
