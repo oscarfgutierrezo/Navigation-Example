@@ -25,7 +25,8 @@ module.exports = {
         nav23e: 'url("../img/navigation-23-05.png")',
       },
       gridTemplateColumns: {
-        'fill': 'repeat(auto-fill, minmax(300px, 1fr))',
+        'fill-300': 'repeat(auto-fill, minmax(300px, 1fr))',
+        'fill-215': 'repeat(auto-fill, minmax(215px, 1fr))',
       }
     },
   },
