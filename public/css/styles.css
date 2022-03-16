@@ -629,10 +629,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-width: 215px;
 }
 
-.min-w-\[256px\]{
-  min-width: 256px;
-}
-
 .max-w-\[470px\]{
   max-width: 470px;
 }
@@ -984,6 +980,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 2.5rem;
 }
 
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .pl-3{
   padding-left: 0.75rem;
 }
@@ -1030,10 +1036,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pl-1{
   padding-left: 0.25rem;
-}
-
-.pt-2{
-  padding-top: 0.5rem;
 }
 
 .text-left{
@@ -1132,6 +1134,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-opacity-70{
   --tw-text-opacity: 0.7;
+}
+
+.text-opacity-30{
+  --tw-text-opacity: 0.3;
+}
+
+.text-opacity-80{
+  --tw-text-opacity: 0.8;
 }
 
 .placeholder-white::-moz-placeholder{
@@ -1237,16 +1247,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
-.hover\:border:hover{
-  border-width: 1px;
-}
-
 .hover\:border-b:hover{
   border-bottom-width: 1px;
-}
-
-.hover\:border-b-2:hover{
-  border-bottom-width: 2px;
 }
 
 .hover\:border-light-violet:hover{
@@ -1291,6 +1293,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .hover\:bg-transparent:hover{
   background-color: transparent;
+}
+
+.hover\:bg-opacity-30:hover{
+  --tw-bg-opacity: 0.3;
 }
 
 .hover\:text-light-violet:hover{
@@ -1528,6 +1534,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     justify-self: end;
   }
 
+  .md\:justify-self-center{
+    justify-self: center;
+  }
+
   .md\:border-0{
     border-width: 0px;
   }
@@ -1664,10 +1674,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:col-start-5{
     grid-column-start: 5;
-  }
-
-  .xl\:grid{
-    display: grid;
   }
 
   .xl\:grid-cols-4{
