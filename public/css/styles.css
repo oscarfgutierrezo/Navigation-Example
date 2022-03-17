@@ -526,12 +526,44 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 50%;
 }
 
+.right-0{
+  right: 0px;
+}
+
+.bottom-0{
+  bottom: 0px;
+}
+
+.left-0{
+  left: 0px;
+}
+
+.top-6{
+  top: 1.5rem;
+}
+
+.left-10{
+  left: 2.5rem;
+}
+
+.top-0{
+  top: 0px;
+}
+
 .order-3{
   order: 3;
 }
 
 .order-4{
   order: 4;
+}
+
+.-order-3{
+  order: -3;
+}
+
+.-order-2{
+  order: -2;
 }
 
 .col-span-4{
@@ -566,9 +598,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-column: span 8 / span 8;
 }
 
+.col-span-12{
+  grid-column: span 12 / span 12;
+}
+
+.float-left{
+  float: left;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
+}
+
+.mb-4{
+  margin-bottom: 1rem;
 }
 
 .block{
@@ -607,6 +651,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 0.75rem;
 }
 
+.h-\[458px\]{
+  height: 458px;
+}
+
+.min-h-\[195px\]{
+  min-height: 195px;
+}
+
 .w-fit{
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -643,6 +695,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-\[256px\]{
   max-width: 256px;
+}
+
+.max-w-full{
+  max-width: 100%;
+}
+
+.max-w-\[346px\]{
+  max-width: 346px;
 }
 
 .-translate-x-1\/2{
@@ -691,6 +751,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
 }
 
+.grid-cols-12{
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.grid-cols-fill-175{
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -717,6 +785,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-center{
   justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
 }
 
 .justify-around{
@@ -807,8 +879,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.375rem;
 }
 
+.rounded-xl{
+  border-radius: 0.75rem;
+}
+
 .border-2{
   border-width: 2px;
+}
+
+.border-0{
+  border-width: 0px;
 }
 
 .border-b{
@@ -920,6 +1000,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url("../img/navigation-23-05.png");
 }
 
+.bg-nav26{
+  background-image: url("../img/navigation-26-09.png");
+}
+
 .bg-cover{
   background-size: cover;
 }
@@ -932,12 +1016,25 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-position: right;
 }
 
+.bg-no-repeat{
+  background-repeat: no-repeat;
+}
+
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-3{
   padding: 0.75rem;
 }
 
 .p-8{
   padding: 2rem;
+}
+
+.p-0{
+  padding: 0px;
 }
 
 .py-6{
@@ -990,6 +1087,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.25rem;
 }
 
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .pl-3{
   padding-left: 0.75rem;
 }
@@ -1036,6 +1138,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pl-1{
   padding-left: 0.25rem;
+}
+
+.pt-14{
+  padding-top: 3.5rem;
+}
+
+.pb-10{
+  padding-bottom: 2.5rem;
 }
 
 .text-left{
@@ -1134,10 +1244,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-opacity-70{
   --tw-text-opacity: 0.7;
-}
-
-.text-opacity-30{
-  --tw-text-opacity: 0.3;
 }
 
 .text-opacity-80{
@@ -1328,6 +1434,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
 }
 
+.hover\:no-underline:hover{
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+.hover\:outline-none:hover{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .hover\:ring-2:hover{
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
@@ -1337,6 +1453,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:ring-white:hover{
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity));
+}
+
+.focus\:no-underline:focus{
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
 
 .focus\:outline-none:focus{
@@ -1387,6 +1508,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:col-span-3{
     grid-column: span 3 / span 3;
+  }
+
+  .sm\:block{
+    display: block;
   }
 
   .sm\:h-96{
@@ -1534,10 +1659,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     justify-self: end;
   }
 
-  .md\:justify-self-center{
-    justify-self: center;
-  }
-
   .md\:border-0{
     border-width: 0px;
   }
@@ -1593,6 +1714,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     order: 3;
   }
 
+  .lg\:-order-1{
+    order: -1;
+  }
+
   .lg\:col-span-2{
     grid-column: span 2 / span 2;
   }
@@ -1609,6 +1734,22 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-column: span 6 / span 6;
   }
 
+  .lg\:col-span-7{
+    grid-column: span 7 / span 7;
+  }
+
+  .lg\:col-span-5{
+    grid-column: span 5 / span 5;
+  }
+
+  .lg\:row-span-2{
+    grid-row: span 2 / span 2;
+  }
+
+  .lg\:h-full{
+    height: 100%;
+  }
+
   .lg\:w-full{
     width: 100%;
   }
@@ -1616,6 +1757,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:columns-1{
     -moz-columns: 1;
          columns: 1;
+  }
+
+  .lg\:columns-4{
+    -moz-columns: 4;
+         columns: 4;
   }
 
   .lg\:justify-start{
@@ -1672,8 +1818,33 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-column: span 5 / span 5;
   }
 
+  .xl\:col-span-6{
+    grid-column: span 6 / span 6;
+  }
+
+  .xl\:col-span-4{
+    grid-column: span 4 / span 4;
+  }
+
   .xl\:col-start-5{
     grid-column-start: 5;
+  }
+
+  .xl\:col-start-3{
+    grid-column-start: 3;
+  }
+
+  .xl\:row-span-3{
+    grid-row: span 3 / span 3;
+  }
+
+  .xl\:row-span-2{
+    grid-row: span 2 / span 2;
+  }
+
+  .xl\:columns-1{
+    -moz-columns: 1;
+         columns: 1;
   }
 
   .xl\:grid-cols-4{
@@ -1694,6 +1865,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:gap-10{
     gap: 2.5rem;
+  }
+
+  .xl\:gap-5{
+    gap: 1.25rem;
+  }
+
+  .xl\:gap-y-5{
+    row-gap: 1.25rem;
   }
 
   .xl\:text-left{
